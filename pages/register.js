@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { toast } from 'react-toastify';
+import { Modal } from 'antd';
 
 const Register = () => {
   const [name, setName] = useState('');
@@ -106,6 +107,11 @@ const Register = () => {
               </button>
             </div>
           </form>
+        </div>
+      </div>
+      <div className='row'>
+        <div className='col'>
+          <Modal title='congratulation' visible={true} />
         </div>
       </div>
     </div>
